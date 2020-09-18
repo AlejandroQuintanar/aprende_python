@@ -3,7 +3,7 @@
 
 class Bandeja:
     def __init__(self, *elementos):
-        self.elementos = elementos [::-1]
+        self.elementos = list(elementos)[::-1]
         self.copia=list(elementos)
         self.resultados = []
 

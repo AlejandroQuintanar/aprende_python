@@ -8,3 +8,4 @@ y=bandeja.entrada()
 bandeja.salida(y)
 z=bandeja.entrada()
 bandeja.salida(z)
+
