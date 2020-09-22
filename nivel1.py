@@ -2,10 +2,12 @@
 from bandeja import Bandeja
 
 bandeja=Bandeja(1,5,"a")
-x=bandeja.entrada()
-bandeja.salida (x)
-y=bandeja.entrada()
-bandeja.salida(y)
-z=bandeja.entrada()
-bandeja.salida(z)
+
+primero=bandeja.entrada()
+segundo=bandeja.entrada()
+tercero=bandeja.entrada()
+
+bandeja.salida (primero)
+bandeja.salida(segundo)
+bandeja.salida(tercero)
 
