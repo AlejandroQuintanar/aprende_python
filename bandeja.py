@@ -3,13 +3,13 @@
 
 class Bandeja:
     def __init__(self, *elementos):
-        self.elementos = list(elementos)[::-1]
-        self.copia=list(elementos)
+        self.elementos = list(elementos)
+        self.copia=list(elementos)[::-1]
         self.resultados = []
 
     def entrada(self):
         # Saca un elemento de la "entrada" como en el juego
-        return self.elementos.pop()
+        return self.copia.pop()
 
 
     def salida(self, cosa):
