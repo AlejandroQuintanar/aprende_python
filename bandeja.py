@@ -4,13 +4,18 @@
 class Bandeja:
     def __init__(self, *elementos):
         self.elementos = list(elementos)
-        self.copia=list(elementos)[::-1]
+        self.mutable = list(elementos)[::-1]
         self.resultados = []
 
-    def entrada(self):
-        # Saca un elemento de la "entrada" como en el juego
-        return self.copia.pop()
+    def entrada_vacia(self):
+        # Checha si la bandeja de entrada esta vacia
+        return len(self.mutable) == 0
 
+    def entrada(self):
+        # Saca un elemento de la "entrada" como en el juego, si no esta vacia
+        # Regresa None si esta vacia
+        if not self.entrada_vacia():
+            return self.mutable.pop()
 
     def salida(self, cosa):
         # Pone un elemento en la "salida" como en el juego, no hay valor de "return"
